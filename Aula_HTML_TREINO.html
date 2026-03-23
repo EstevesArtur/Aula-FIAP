@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Moderna</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #d3d3d3;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(15, 23, 42, 0.9);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #38bdf8;
+      border: none;
+      color: #0f172a;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #0ea5e9;
+    }
+
+    .features {
+      padding: 80px 10%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      margin-top: 50px;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>DevX</h2>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Crie experiências digitais incríveis</h1>
+    <p>Uma landing page moderna, rápida e responsiva para impressionar qualquer cliente ou recrutador.</p>
+    <button class="btn" onclick="alert('🚀 Vamos começar!')">Começar</button>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>⚡ Performance</h3>
+      <p>Carregamento rápido e otimizado para todos os dispositivos.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Design Moderno</h3>
+      <p>Interface limpa e com foco em experiência do usuário.</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 Responsivo</h3>
+      <p>Funciona perfeitamente em celular, tablet e desktop.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 DevX — Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
